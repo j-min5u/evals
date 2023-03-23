@@ -1,0 +1,8 @@
+sentence-correction:
+  id: sentence-correction.dev.v0
+  metrics: [accuracy]
+
+sentence-correction.dev.v0:
+  class: evals.elsuite.basic.fuzzy_match:FuzzyMatch
+  args:
+    samples_jsonl: sentence_correction/sentence_correction_kr.jsonl
